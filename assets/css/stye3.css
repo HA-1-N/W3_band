@@ -1,0 +1,553 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* class chung  */
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.pad-8{
+    padding:11px 8px;
+}
+
+.pad-lr-8{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.mar-8{
+    margin-bottom: 8px;
+}
+
+/* main  */
+#main3{
+    
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#Header{
+    height: 46px;
+    color: #fff;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav3 .subnav3 a{
+    color: #000;
+    padding: 14px 32px;
+}
+
+#nav3,
+#nav3 > li:first-child,
+#nav3 > li{
+    display: inline-block;
+}
+
+#nav3 li{
+    position: relative;
+}
+
+#nav3 > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav3 li a{
+    text-decoration: none;
+    padding: 14px 24px;
+    display: block;
+}
+
+#nav3 .subnav3{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+}
+
+#nav3 > li:hover > a,   
+#nav3 .subnav3 li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav3 li:hover .subnav3{
+    display: block;
+}
+
+#nav3 .CSS-ti-angle-down{
+    font-size: 13px;
+    left: 1px;
+}
+
+#Menu-mobile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#Menu-mobile,
+#Header .Search3{
+    padding: 13px 24px;
+    float: right;
+}
+
+#Header .Search3:hover{
+    color: #fff;
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#Menu-mobile:hover{
+    background-color: #ccc;
+}
+
+#Menu-mobile:hover .CSS-menu-mobile{
+    color: #000;
+}
+
+#Menu-mobile .CSS-menu-mobile,
+#Header .CSS-ti-search{
+    color: #fff;
+    font-size: 20px;
+}
+
+#Slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/Slider/Slide3.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#Slider .text-content3{
+    position: absolute;
+    padding: 32px 16px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#Slider .text-header-3{
+    color: #fff;
+    margin: 10px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+#Slider .text-content-slide3{
+    color: #fff;
+    margin: 15px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+ 
+/* The band */
+#Content .Content-text3{
+    padding: 64px 16px;
+    margin: 0 200px;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Content .Content-text3-Header{
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    box-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Content .Content-text3-title{
+    opacity: 0.6;
+    font-size: 15px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+#Content .Content-text3-about{
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}   
+
+#Content .Band3{
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+#Content .Band3-Member{
+    float: left;
+    width: calc(100%/3);
+}
+
+#Content .Name-Member{
+    margin: 15px 0;
+}
+
+#Content .Member-item{
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    vertical-align: middle;
+} 
+
+/* Tour */
+
+#Content #Tour-section{
+    background-color: #000;
+}
+
+#Tour-section .time-ticket{
+    list-style-type: none;
+    background-color: #fff;
+    color: #757575;
+    margin-top: 40px;
+}
+
+#Tour-section .Time{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 16px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5;
+}    
+
+#Tour-section .sold-out{
+    background-color: #f44336;
+    margin-left: 16px;
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 15px;
+}
+
+#Tour-section .still-ticket{
+    background-color: #000;
+    float: right;
+    margin-right: 16px;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 1px 8px;
+}
+
+/* Places */
+
+#Tour-section .places-list{
+    margin: 0 -16px;
+    padding: 32px 8px;
+    
+}
+
+#Tour-section .place-items{
+    float: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    width: calc(100%/3);
+}
+
+#Tour-section .place-picture{
+    width: 100%;
+    display:block;
+}
+
+#Tour-section .place-picture:hover{
+    opacity: 0.6;
+}
+
+#Tour-section .container-place{
+    background-color: #fff;
+    text-align: left;
+    padding: 0 16px;
+}
+
+#Tour-section .place-heading{
+    font-size: 15px;
+    padding: 15px 0;
+    font-weight: bolder;
+}
+
+#Tour-section .time-place{
+    opacity: 0.6;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#Tour-section .place-content{
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+#Tour-section .Button{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#Tour-section .Button:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Contact */
+
+#Content .Contact-section{
+    background-color: #fff;
+}
+
+.contact-form{
+    padding: 32px 0;
+}
+
+.contact-form .method-contact{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-form .method-contact i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form .control-infor{
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+}
+
+.contact-form .send-submit{
+    color: #fff;
+    background-color: #000;
+    margin: 16px 0;
+    float: right;
+    padding: 10px 14px;
+    border: none;
+    font-size: 15px;
+}   
+
+.contact-form .send-submit:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Footer */
+#Footer{
+    background-color: #f1f1f1;
+}
+
+#Footer .map{
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    display: block;
+}
+
+#Footer .icons-Social-Network{
+    padding: 64px 16px;
+    font-size: 24px;
+}
+
+#Footer .icons-Social-Network i[class*="ti-"]:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#Footer .Source{
+    font-size: 15px;
+    margin: 15px;
+    color: #757575;
+}
+
+
+/* Modal Tickets */
+
+.modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 3;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-wrap {
+    position: relative;
+    margin: auto;
+    width: 900px;
+    background-color: #fff;
+    min-height: 200px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 25%);
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+i.modal-header-close.ti-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    color: #fff;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+i.modal-header-close.ti-close:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.modal-header {
+    background: #009688;
+    position: relative;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}   
+
+h2.modal-header-name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.modal-container {
+    padding: 16px;
+}
+
+label.modal-container__name {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.modal-container__input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 15px;
+}
+
+button.modal-container__btn {
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 16px 0px;
+    padding: 16px;
+    font-size: 15px;
+    color: #fff;
+    background: #009688;
+}
+
+button.modal-container__btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button.modal-container__btn-close {
+    color: #fff;
+    background: #ec4c1d;
+    border: none;
+    padding: 12px 18px;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+button.modal-container__btn-close:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+p.modal-container__footer {
+    float: right;
+    font-size: 16px;
+    margin-top: 34px;
+}
+
+.modal-container__footer-help{
+    color: #43beda;
+}
+
+
